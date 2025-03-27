@@ -7,3 +7,6 @@ INSERT INTO student VALUES
 (5,"Ashwin",7.6); -- inserts more than one row
 
 INSERT INTO student(id,name) VALUES(5,"Balaji"),(6,"Chandru"); -- inserts specific columns.
+
+SELECT * FROM student; -- displays all rows and columns in the student table
+SELECT id,name FROM student; -- displays specific columns
