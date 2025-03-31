@@ -1,0 +1,62 @@
+ Predefined function:
+ 1. Single row function
+ 2. Multiple row function
+ 3. Window function
+ 4. Table function
+ 5. System function
+
+REATE TABLE employee1 (
+    employee_id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name  VARCHAR(50),
+    last_name   VARCHAR(50),
+    position    VARCHAR(50),
+    salary      DECIMAL(10,2));
+    INSERT INTO employee1 (first_name, last_name, position, salary)
+VALUES
+('Alice', 'Smith', 'Developer', 70000.00),
+('Bob', 'Johnson', 'Developer', 75000.00),
+('Charlie', 'Lee', 'Manager', 90000.00);
+Single Row function:
+--------------------
+1. String function
+===================
+Upper: used to convert the string into Upper case
+----------------
+select upper(first_name)
+from employee1
+
+lower : used to convert the string into lower case
+-------------------
+select lower(first_name)
+from employee1
+
+select upper(first_name) ,lower(Last_name)
+from employee1
+
+initcap : It is used to convert the string or column any case to initial as capital letter
+---------
+length
+--------
+select length(first_name)
+from employee1
+
+Display the first_name greater than 5
+select first_name ,length(first_name)  
+from employee1
+where  length(first_name) >5
+
+ltrim |rtrim |trim
+---------
+replace
+---------
+select
+translate
+----------
+It is translated/replace the argument
+
+reverse
+substr
+instr
+
+
+
